@@ -26,21 +26,15 @@ public class Subject {
     private Long id;
 
     @Column
-    @NotNull
+    @NotEmpty
     private String name;
 
     @Column
+    @NotEmpty
     private Integer ECTSPoints;
 
     @Column
     @NotNull
     private String semester;
-
-/*    @ElementCollection
-    private Set<String> semesters;
-
-    public Subject() {
-        this.semesters = new HashSet<>(Arrays.asList("1", "2","3", "4", "5", "6", "7"));
-    }*/
 
 }
